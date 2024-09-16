@@ -1,20 +1,20 @@
-*myhelp.txt*	For Vim version 7.4	Last change: 2014 October 8
-*myhelp*
+*chsh.txt*	For Vim version 7.4	Last change: 2014 October 8
+*chsh*
 
-Matt's cheat sheet of Vim stuff he always forgets.
+vidy's cheat sheet of vim stuff he always forgets and doesnt even care about it.
 
 ===============================================================================
 CONTENTS
 
-	1. Normal Mode.......................................|myhelp-normal|
-	2. Visual Mode.......................................|myhelp-visual|
-	3. Insert Mode.......................................|myhelp-insert|
-	4. Notes.............................................|myhelp-notes|
-	5. Rebuilding this file
+	1. Normal Mode.......................................|chsh-normal|
+	2. Visual Mode.......................................|chsh-visual|
+	3. Insert Mode.......................................|chsh-insert|
+	4. Rebuilding this file
 
 ===============================================================================
-1. Normal Mode                                         *myhelp-normal*
+1. Normal Mode                                         *chsh-normal*
 
+   - p : paste
    - :wall : Save modified buffers
    - :x : Save buffer only if modified, then exit (better than :wq)
    - ]] : next section
@@ -31,9 +31,23 @@ CONTENTS
 
    - /<C-R><C-W>: Pull word into command line (or search)
    - :reg : list registers (and show what’s in them)
+   
+   BONUS
+   Plugins
+   
+   - :CtrlP : invoke ctrlp (file search)
+   - <c-f>|<c-b> : cycle between ctrlp modes
+   - <c-d> : switch to filename only search instead of full path.
+   - <c-r> : switch to regexp mode.
+   - <c-n>|<c-p> : select the next/previous string in the prompt's history.
+   - <c-y> : create a new file and its parent directories.
+   - <c-z> : mark/unmark multiple files
+   - <c-o> : open them.
+
+   - :NERDTree : open tree-style file explorer
 
 ===============================================================================
-2. Visual Mode                                         *myhelp-visual*
+2. Visual Mode                                         *chsh-visual*
 
    - SHIFT-[LEFT/RIGHT] : Shift one word left or right
    - J : Join the highlighted lines, removing unnecessary whitespace.
@@ -42,9 +56,10 @@ CONTENTS
    - vab : select a "block" (works differently in different langs)
    - vat : select a <tag> and its contents (use i instead of a for just
      contents)
+   - y : copy selected text
 
 ===============================================================================
-3. Insert Mode                                         *myhelp-insert*
+3. Insert Mode                                         *chsh-insert*
 
    - <C-N>: Complete word
    - <C-N><C-P>: Complete word (?)
@@ -55,16 +70,7 @@ CONTENTS
      commands)
 
 
-===============================================================================
-4. NOTES                                               *myhelp-notes*
-
-Janus: https://github.com/carlhuda/janus
-
-Why disable supertab? Because it's really annoying when you're writing in a
-language that uses tabs instead of spaces.
-
-===============================================================================
-5. Rebuilding this file.
+4. Rebuilding this file.
 
 This file is loaded as a plugin. If you ever need to rebuild the tags file, run
 this command: >

@@ -1,5 +1,5 @@
-ch	myhelp.txt	/*myhelp*
-ch-insert	myhelp.txt	/*myhelp-insert*
-ch-normal	myhelp.txt	/*myhelp-normal*
-ch-visual	myhelp.txt	/*myhelp-visual*
-ch.txt	myhelp.txt	/*myhelp.txt*
+chsh		chsh.txt	/*chsh.txt*
+chsh-insert	chsh.txt	/*chsh-insert*
+chsh-normal	chsh.txt	/*chsh-normal*
+chsh-visual	chsh.txt	/*chsh-visual*
+chsh.txt	chsh.txt	/*chsh.txt*
